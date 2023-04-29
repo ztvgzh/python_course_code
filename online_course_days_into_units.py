@@ -32,3 +32,11 @@ while user_input != "exit":
     for num_of_days_element in set(list_of_days):
         validate_and_execute()
 
+
+# Using sets 
+"""my_set = {"January", "February", "March"}
+for element in my_set:
+    print(element)
+
+my_set.add("April")
+my_set.remove("March") """
