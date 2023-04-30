@@ -21,3 +21,5 @@ def validate_and_execute(days_and_unit_dict):
             print("You intered negative number, change number of days!")
     except ValueError:
             print("Don't ruin my program!")
+
+user_input_message = "Inter number of days and unit:\n"
