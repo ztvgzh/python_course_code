@@ -11,7 +11,7 @@ for product_row in range(2, product_list.max_row+1):
     supplier_name = product_list.cell(product_row, 4).value
 
     if supplier_name in profucts_per_supplier:
-        current_num_products = profucts_per_supplier[supplier_name]
+        current_num_products = profucts_per_supplier.get(supplier_name)
         profucts_per_supplier[supplier_name] = current_num_products+1
     else:
         profucts_per_supplier[supplier_name] = 1
