@@ -14,6 +14,7 @@ for product_row in range(2, product_list.max_row+1):
     inventory = product_list.cell(product_row, 2).value
     price = product_list.cell(product_row, 3).value
     product_num = int(product_list.cell(product_row, 1).value)
+    inventory_price = product_list.cell(product_row, 5)
 
     #task 1. to find the quantity of products per supplier
     if supplier_name in profucts_per_supplier:
@@ -34,4 +35,9 @@ for product_row in range(2, product_list.max_row+1):
     #task 3. to find inventory that less 10
     if inventory<10:
         products_under_10_inv[product_num] = int(inventory)
-print(products_under_10_inv)
+# task 3. output: print(products_under_10_inv)
+
+    # task 4. new column
+    inventory_price.value = inventory*price
+    
+inv_file.save("inventory_with_total_price.xlsx")
