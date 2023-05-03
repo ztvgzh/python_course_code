@@ -1,4 +1,4 @@
-"""""
+"""
 #   TASK 1
 import tldextract as t
 
@@ -11,6 +11,9 @@ domain_name_extract = t.extract(url)
 # Print only the domain name
 print("Domain name is:", domain_name_extract.domain)
 """
+
+
+
 
 """
 #   TASK 2
@@ -40,6 +43,10 @@ for i in range(num_zero):
 # printing result
 print(f"New array: {arr1}")
 """
+
+
+
+
 """
 # TASK 3
 user_input = input("Enter your message: \n")
