@@ -9,3 +9,5 @@ print(value)
 # to add new value
 my_dict["hobby"] = "dancing"
 print(my_dict)
+
+my_dict2["university"] = "ITMO university"
